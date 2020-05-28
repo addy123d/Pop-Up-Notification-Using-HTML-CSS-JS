@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+:root{
+    --mainfont: 'Poppins',cursive;
+}
+
+html{
+    height: 100%;
+    overflow-y: auto;
+}
+
+body{
+    height: 100%;
+    color: #ffffff;
+    font-family: var(--mainfont);
+}
+
+
+.notification{
+    background: #000000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+
+.popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#message{
+    position: fixed;
+    top: -100%;
+    padding: .5em 1em .5em 1em;
+    background: greenyellow;
+    text-shadow: 1px 1px 2px #000000;
+    transition: top .5s;
+}
+
+#message.active{
+    top: 0;
+}
+
+
+.send{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send #sendbutton{
+    margin-top: 10%;
+    padding: .5em 1em .5em 1em;
+    background: transparent;
+    color: #ffffff;
+    outline: none;
+    overflow: hidden;
+    font-family: var(--mainfont);
+    font-size: 1.3rem;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+}
+
+.send #sendbutton:hover{
+    transition: all .3s;
+    background: #ffffff;
+    color: #000000;
+}
